@@ -26,8 +26,8 @@ module.exports = {
       },
       {
         source: "/test/(.*)",
-        has: [{ type: "query", key: "goto", value: "google" }],
-        destination: "https://google.com"
+        has: [{ type: "query", key: "goto", value: "vercel" }],
+        destination: "https://vercel.com/"
       }
     ]
   },
