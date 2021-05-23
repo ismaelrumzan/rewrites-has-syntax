@@ -24,6 +24,11 @@ module.exports = {
         source: '/docs/:slug',
         destination: 'http://example.com/docs/:slug',
       },
+      {
+        source: "/test/(.*)",
+        has: [{ type: "query", key: "goto", value: "google" }],
+        destination: "https://google.com"
+      }
     ]
   },
 }
